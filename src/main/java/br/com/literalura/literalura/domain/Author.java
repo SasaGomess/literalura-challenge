@@ -69,6 +69,7 @@ public class Author {
 
     public void setBooks(Book book) {
         book.setAuthor(this);
+        this.books.add(book);
     }
 
     @Override

@@ -50,6 +50,7 @@ public class Application {
             author.setBooks(book);
 
             authorService.create(author);
+            bookService.create(book);
 
             System.out.println(book);
             } catch (JsonProcessingException e) {

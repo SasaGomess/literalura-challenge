@@ -22,9 +22,9 @@ public class AuthorService {
         return repository.findAll();
     }
 
-    public List<Author> findLivingAuthorsByYear(Integer deathYear) {
-        if(deathYear <= 0 ) throw new IllegalArgumentException("Digite uma data de falecimento valida");
-        return repository.findAllByDeathYear(deathYear);
+    public List<Author> findLivingAuthorsByYear(Integer birthYear) {
+        if(birthYear <= 0 ) throw new IllegalArgumentException("Digite uma data de falecimento valida");
+        return repository.findAllByBirthYear(birthYear);
     }
 
 }
